@@ -25,8 +25,17 @@ public class GeluidScripts : MonoBehaviour
     {
         DraaiKnop.transform.Rotate(0, (Input.GetAxis("Mouse X") * RotationSpeed * Time.deltaTime), 0, Space.World);
         //noiseSound();
-        noiseSound();
+        noiseSound(); 
+        if (calculatedVolume >= 1)
+        {
+            win();
+        }
     }
+    void win()
+    {
+        Debug.Log("Win");
+    }
+
 
     void noiseSound()
     {

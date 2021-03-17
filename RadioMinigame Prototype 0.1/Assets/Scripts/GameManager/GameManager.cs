@@ -7,6 +7,7 @@ public class GameManager : SingleTon<GameManager>
     public List<string> knopVolgorde = new List<string>();
     public int index;
     public int knopScore;
+    public GameObject radioDraaier;
 
     public bool roodEmission;
     public bool geelEmission;
@@ -21,6 +22,7 @@ public class GameManager : SingleTon<GameManager>
     private void Awake()
     {
         Instance = this;
+        radioDraaier.SetActive(false);
     }
 
     private void Update()
@@ -30,6 +32,8 @@ public class GameManager : SingleTon<GameManager>
         {
             Debug.Log("yoooooooooooooooooooooo");
             StartCoroutine(reset(.5f));
+            radioDraaier.SetActive(true);
+
         }
     }
 

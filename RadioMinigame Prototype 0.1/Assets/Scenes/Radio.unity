@@ -899,6 +899,7 @@ MonoBehaviour:
   - Geel
   index: 0
   knopScore: 0
+  radioDraaier: {fileID: 1798571402}
   roodEmission: 0
   geelEmission: 0
   bruinEmission: 0
@@ -1010,13 +1011,13 @@ AudioSource:
   m_GameObject: {fileID: 1798571402}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: eb74a824040568649955970ef91e8e4d, type: 3}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 093fe3255feca3348b7809582caa5427, type: 2}
+  m_audioClip: {fileID: 8300000, guid: b393241ca8100b74ba4be392326d082b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
-  Mute: 1
+  Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
