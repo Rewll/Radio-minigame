@@ -7,7 +7,8 @@ public class Oranje : MonoBehaviour, IclickAble
     public string knopKleur { get; set; }
     public Material OranjeMat;
     public Material OranjeEmission;
-    public Renderer renderer;
+    public new Renderer renderer;
+
 
     private void Update()
     {

@@ -7,7 +7,7 @@ public class Rood : MonoBehaviour, IclickAble
     public string knopKleur { get; set;}
     public Material RoodMat;
     public Material RoodEmission;
-    public Renderer renderer;
+    public new Renderer renderer;
 
     private void Update()
     {

@@ -7,7 +7,8 @@ public class Bruin : MonoBehaviour, IclickAble
     public string knopKleur { get; set; }
     public Material bruinMat;
     public Material bruinEmission;
-    public Renderer renderer;
+    public new Renderer renderer;
+
 
     private void Update()
     {
