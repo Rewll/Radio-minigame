@@ -1,22 +1,12 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - Agent
-    - ClicketyClick
+    - Bruin
     - GameManager
-    - Links1
-    - Links2
-    - Links3
-    - Links4
-    - Minigame1
-    - Minigame2
-    - Minigame3
-    - Minigame4
-    - Rechts1
-    - Rechts2
-    - Rechts3
-    - Rechts4
-    - SelectionState
+    - Geel
+    - GeluidScripts
+    - Oranje
+    - Rood
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -34,12 +24,11 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
-    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
   sceneClasses:
-    Assets/Scenes/SampleScene.unity:
+    Assets/Scenes/Radio.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -66,6 +55,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 91
@@ -79,61 +72,39 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1448}
     - Class: 114
-      Script: {instanceID: 1782}
+      Script: {instanceID: 1544}
     - Class: 114
-      Script: {instanceID: 1856}
+      Script: {instanceID: 1556}
     - Class: 114
-      Script: {instanceID: 1906}
+      Script: {instanceID: 1770}
     - Class: 114
-      Script: {instanceID: 2202}
+      Script: {instanceID: 1860}
     - Class: 114
-      Script: {instanceID: 2252}
+      Script: {instanceID: 1910}
     - Class: 114
-      Script: {instanceID: 2424}
+      Script: {instanceID: 2248}
     - Class: 114
-      Script: {instanceID: 2592}
+      Script: {instanceID: 2586}
     - Class: 114
-      Script: {instanceID: 2700}
+      Script: {instanceID: 2694}
     - Class: 114
-      Script: {instanceID: 2746}
+      Script: {instanceID: 2740}
     - Class: 114
-      Script: {instanceID: 2762}
+      Script: {instanceID: 2880}
     - Class: 114
-      Script: {instanceID: 2888}
+      Script: {instanceID: 2934}
     - Class: 114
-      Script: {instanceID: 2942}
+      Script: {instanceID: 3090}
     - Class: 114
-      Script: {instanceID: 2962}
+      Script: {instanceID: 3114}
     - Class: 114
-      Script: {instanceID: 2986}
+      Script: {instanceID: 3116}
     - Class: 114
-      Script: {instanceID: 2988}
+      Script: {instanceID: 3398}
     - Class: 114
-      Script: {instanceID: 2998}
+      Script: {instanceID: 3446}
     - Class: 114
-      Script: {instanceID: 3040}
-    - Class: 114
-      Script: {instanceID: 3080}
-    - Class: 114
-      Script: {instanceID: 3110}
-    - Class: 114
-      Script: {instanceID: 3112}
-    - Class: 114
-      Script: {instanceID: 3136}
-    - Class: 114
-      Script: {instanceID: 3138}
-    - Class: 114
-      Script: {instanceID: 3142}
-    - Class: 114
-      Script: {instanceID: 3272}
-    - Class: 114
-      Script: {instanceID: 3470}
-    - Class: 114
-      Script: {instanceID: 3490}
-    - Class: 114
-      Script: {instanceID: 3612}
-    - Class: 114
-      Script: {instanceID: 3688}
+      Script: {instanceID: 3648}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -142,13 +113,17 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 241
+      Script: {instanceID: 0}
+    - Class: 243
+      Script: {instanceID: 0}
+    - Class: 245
       Script: {instanceID: 0}
     - Class: 850595691
       Script: {instanceID: 0}
@@ -177,6 +152,18 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: ContentSizeFitter
+  - hash:
+      serializedVersion: 2
+      Hash: de65273d354465272c38cab7af1b7490
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Bruin
+  - hash:
+      serializedVersion: 2
+      Hash: f596f670cef271018f663e41c254cb98
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GeluidScripts
   - hash:
       serializedVersion: 2
       Hash: 77aaaaa51f7a8d8ff333a879741e47d2
@@ -257,6 +244,12 @@ ScriptsOnlyBuild:
     className: SkewTextExample
   - hash:
       serializedVersion: 2
+      Hash: e565987334ae45fe98b204f8df79a501
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Rood
+  - hash:
+      serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -273,12 +266,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: BaseInput
-  - hash:
-      serializedVersion: 2
-      Hash: 19ce99d2bdbe2b3d8b21e973ff7ea588
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Links2
   - hash:
       serializedVersion: 2
       Hash: e6f0efd0e20669d577e9d21526b3d3f9
@@ -371,12 +358,6 @@ ScriptsOnlyBuild:
     className: EventTrigger
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: LinkerKnop1
-  - hash:
-      serializedVersion: 2
       Hash: a81d4c2c1cf3ad164d277d927a193679
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -393,12 +374,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: GroupTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Minigame4
   - hash:
       serializedVersion: 2
       Hash: a5781dc71a671b1ad2b38de19f24b71f
@@ -453,12 +428,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Mask
-  - hash:
-      serializedVersion: 2
-      Hash: 17152b9f454358c9efd9b4c6d42a5d37
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Rechts4
   - hash:
       serializedVersion: 2
       Hash: c1d728126ff1918728036c59106d32b2
@@ -539,12 +508,6 @@ ScriptsOnlyBuild:
     className: TMP_Settings
   - hash:
       serializedVersion: 2
-      Hash: e97b521acf095695721147ae5e7a0629
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Links4
-  - hash:
-      serializedVersion: 2
       Hash: 3375c3d749f8f4cad889721b431bdc27
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -593,12 +556,6 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: 2a7acbe33d9ec8fc377eb4c916fd1675
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Links1
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -611,52 +568,16 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SelectionState
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ClicketyClick
-  - hash:
-      serializedVersion: 2
-      Hash: b7af93017840c5df67cc892e1e37aaa8
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Rechts1
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Agent
-  - hash:
-      serializedVersion: 2
       Hash: fe1fdeffc2067077b2f1a90b210c2532
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DropdownSample
   - hash:
       serializedVersion: 2
-      Hash: 571abeb0e15bc75f4b1d7ba0c51902e7
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Rechts2
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro
     className: TMP_PhoneNumberValidator
-  - hash:
-      serializedVersion: 2
-      Hash: d14a188cfc4dff1760d2c6f5c6fe1c94
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Rechts3
   - hash:
       serializedVersion: 2
       Hash: fd68d84f33fad85aac38f2739c0ee270
@@ -689,16 +610,10 @@ ScriptsOnlyBuild:
     className: GraphicRaycaster
   - hash:
       serializedVersion: 2
-      Hash: ba01c5351295fb39b29508edc32686c3
+      Hash: 9d0ad6cae7f7280e68d87f2317f4ed46
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Minigame3
   - hash:
       serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
@@ -739,12 +654,6 @@ ScriptsOnlyBuild:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Minigame2
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: TextConsoleSimulator
   - hash:
@@ -773,6 +682,12 @@ ScriptsOnlyBuild:
     className: ObjectSpin
   - hash:
       serializedVersion: 2
+      Hash: 304a54e48c413fa97702a91448f828ec
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Geel
+  - hash:
+      serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -783,12 +698,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Scrollbar
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Minigame1
   - hash:
       serializedVersion: 2
       Hash: 5dea360fb0b147724ac344e6f399c2f3
@@ -869,10 +778,10 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
-      Hash: 3d9859103ac4101e9378d941cb199401
+      Hash: a05c68b7b9712396da0f9329016e9392
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Links3
+    className: Oranje
   - hash:
       serializedVersion: 2
       Hash: dd7520b7d4e690e8c593273e7b9fbe80
@@ -887,6 +796,6 @@ ScriptsOnlyBuild:
     className: TextContainer
   platform: 5
   scenePathNames:
-  - Assets/Scenes/SampleScene.unity
+  - Assets/Scenes/Radio.unity
   playerPath: D:/Pictures on hdd/HKU/Project Context I/Prototype radio/Radio-minigame/Builds/RadioMinigame
     Prototype 0.1.exe
