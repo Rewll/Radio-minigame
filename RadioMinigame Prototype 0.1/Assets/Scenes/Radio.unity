@@ -205,6 +205,40 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &639238691
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 639238692}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &639238692
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639238691}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4386358061486494025}
+  - {fileID: 6572239055153868275}
+  - {fileID: 4352285115567846247}
+  - {fileID: 3052228518483074712}
+  m_Father: {fileID: 6795603036490091452}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &663474642
 GameObject:
   m_ObjectHideFlags: 0
@@ -993,6 +1027,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd0396aa887352a4aa682bb9d0d72189, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  knopVolgorde:
+  - Geel
+  - Oranje
+  - Rood
+  - Bruin
+  index: 0
+  knopScore: 0
+  roodEmission: 0
+  geelEmission: 0
+  bruinEmission: 0
+  oranjeEmission: 0
 --- !u!4 &1392964975
 Transform:
   m_ObjectHideFlags: 0
@@ -1286,7 +1331,7 @@ Transform:
   m_LocalScale: {x: 0.03715895, y: 0.21104774, z: 0.03715895}
   m_Children: []
   m_Father: {fileID: 6795603036490091452}
-  m_RootOrder: 16
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &522536992325186084
 Transform:
@@ -1333,7 +1378,7 @@ GameObject:
   - component: {fileID: 559669263734542997}
   - component: {fileID: 559669263734542996}
   m_Layer: 0
-  m_Name: Rechthoek_knop_2
+  m_Name: Oranje Knop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1361,9 +1406,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 559669263734542995}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f424021a05eebb943a304b59d0640848, type: 3}
+  m_Script: {fileID: 11500000, guid: 88c1bd170182e2b43be2a2fc138f9f9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OranjeMat: {fileID: 2100000, guid: a1064b5a6bdc17d4a87093a0e71ee8e2, type: 2}
+  OranjeEmission: {fileID: 2100000, guid: 4b8d0d89b4059da409a2c47d33687485, type: 2}
+  renderer: {fileID: 8128019128508842539}
 --- !u!1 &623420615721569560
 GameObject:
   m_ObjectHideFlags: 0
@@ -1467,7 +1515,7 @@ Transform:
   m_LocalScale: {x: 0.48190662, y: 0.14575838, z: 0.48190662}
   m_Children: []
   m_Father: {fileID: 6795603036490091452}
-  m_RootOrder: 11
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &783767310060825548
 GameObject:
@@ -1542,7 +1590,7 @@ Transform:
   m_LocalScale: {x: 0.7120817, y: 0.0341793, z: 0.4925397}
   m_Children: []
   m_Father: {fileID: 6795603036490091452}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &919132148107889467
 GameObject:
@@ -2184,7 +2232,7 @@ Transform:
   m_LocalScale: {x: 0.7120817, y: 0.0341793, z: 0.4925397}
   m_Children: []
   m_Father: {fileID: 6795603036490091452}
-  m_RootOrder: 9
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1847891029872133619
 Transform:
@@ -2609,12 +2657,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4371109762019890953}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.007727915, y: 0.0053782985, z: 0.0034065375}
   m_LocalScale: {x: 0.55961573, y: 0.06976801, z: 0.30150855}
   m_Children: []
-  m_Father: {fileID: 6795603036490091452}
-  m_RootOrder: 10
+  m_Father: {fileID: 639238692}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3069735123717775190
 MeshFilter:
@@ -2835,10 +2883,10 @@ GameObject:
   - component: {fileID: 4386358061486494025}
   - component: {fileID: 5902880086217964231}
   - component: {fileID: 1198812067531077573}
-  - component: {fileID: 3883480191047012422}
   - component: {fileID: 3883480191047012421}
+  - component: {fileID: 3883480191047012422}
   m_Layer: 0
-  m_Name: Rechthoek_knop_1
+  m_Name: Gele Knop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2856,6 +2904,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fe58dfa28bb5794ea9a593ff99ad4a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  geelMat: {fileID: 2100000, guid: 5f485681140d60b4ca884ff1f7961e04, type: 2}
+  geelEmission: {fileID: 2100000, guid: 1bc65ed772cdf88469d815899f86aff8, type: 2}
+  renderer: {fileID: 1198812067531077573}
 --- !u!65 &3883480191047012422
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3048,12 +3099,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8174280393522136350}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.016001878, y: 0.0053782985, z: 0.0034065375}
   m_LocalScale: {x: 0.55961573, y: 0.06976801, z: 0.30150855}
   m_Children: []
-  m_Father: {fileID: 6795603036490091452}
-  m_RootOrder: 8
+  m_Father: {fileID: 639238692}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4371109762019890953
 GameObject:
@@ -3069,7 +3120,7 @@ GameObject:
   - component: {fileID: 4371109762019890955}
   - component: {fileID: 4371109762019890954}
   m_Layer: 0
-  m_Name: Rechthoek_knop_4
+  m_Name: Bruine Knop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3097,9 +3148,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 4371109762019890953}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88c1bd170182e2b43be2a2fc138f9f9d, type: 3}
+  m_Script: {fileID: 11500000, guid: f424021a05eebb943a304b59d0640848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bruinMat: {fileID: 2100000, guid: ffb1359c405cd064cb42343fb424d9fc, type: 2}
+  bruinEmission: {fileID: 2100000, guid: 608d7434e57d9264f9a05a5dd9a9e10f, type: 2}
+  renderer: {fileID: 6448621434286943648}
 --- !u!4 &4376723293946872393
 Transform:
   m_ObjectHideFlags: 0
@@ -3163,12 +3217,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3883480191047012420}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.03290334, y: 0.0053782985, z: 0.0034065375}
   m_LocalScale: {x: 0.55961573, y: 0.06976801, z: 0.30150855}
   m_Children: []
-  m_Father: {fileID: 6795603036490091452}
-  m_RootOrder: 2
+  m_Father: {fileID: 639238692}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4429315555897686677
 GameObject:
@@ -3322,7 +3376,7 @@ Transform:
   m_LocalScale: {x: 0.03715895, y: 0.21104774, z: 0.03715895}
   m_Children: []
   m_Father: {fileID: 6795603036490091452}
-  m_RootOrder: 15
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4786376601193754989
 Transform:
@@ -3790,7 +3844,7 @@ Transform:
   m_LocalScale: {x: 0.28188214, y: 0.072838426, z: 0.28188214}
   m_Children: []
   m_Father: {fileID: 6795603036490091452}
-  m_RootOrder: 13
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &5748557294602357872
 Transform:
@@ -3804,7 +3858,7 @@ Transform:
   m_LocalScale: {x: 0.21061037, y: 0.012758677, z: 0.18335035}
   m_Children: []
   m_Father: {fileID: 6795603036490091452}
-  m_RootOrder: 17
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5763859546693218261
 MeshFilter:
@@ -4122,12 +4176,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 559669263734542995}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.02437729, y: 0.0053782985, z: 0.0034065375}
   m_LocalScale: {x: 0.55961573, y: 0.06976801, z: 0.30150855}
   m_Children: []
-  m_Father: {fileID: 6795603036490091452}
-  m_RootOrder: 6
+  m_Father: {fileID: 639238692}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &6587368393200135776
 MeshRenderer:
@@ -4190,7 +4244,7 @@ Transform:
   m_LocalScale: {x: 0.03715895, y: 0.21104774, z: 0.03715895}
   m_Children: []
   m_Father: {fileID: 6795603036490091452}
-  m_RootOrder: 14
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6668710119595738593
 Transform:
@@ -4264,15 +4318,12 @@ Transform:
   m_Children:
   - {fileID: 1856131493}
   - {fileID: 5109314727449436009}
-  - {fileID: 4386358061486494025}
+  - {fileID: 639238692}
   - {fileID: 4091795813299910686}
   - {fileID: 5035149401356145347}
   - {fileID: 5506766065320099984}
-  - {fileID: 6572239055153868275}
   - {fileID: 918258701402217096}
-  - {fileID: 4352285115567846247}
   - {fileID: 1751524834886650559}
-  - {fileID: 3052228518483074712}
   - {fileID: 751753547330154767}
   - {fileID: 7599307609296805615}
   - {fileID: 5651394168058395602}
@@ -4305,7 +4356,7 @@ Transform:
   m_LocalScale: {x: 0.21061037, y: 0.012758677, z: 0.18335035}
   m_Children: []
   m_Father: {fileID: 6795603036490091452}
-  m_RootOrder: 19
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6918541072980348088
 GameObject:
@@ -4586,7 +4637,7 @@ Transform:
   m_LocalScale: {x: 0.03715895, y: 0.21104774, z: 0.03715895}
   m_Children: []
   m_Father: {fileID: 6795603036490091452}
-  m_RootOrder: 12
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7601986113540336750
 MeshFilter:
@@ -4977,7 +5028,7 @@ GameObject:
   - component: {fileID: 8174280393522136352}
   - component: {fileID: 8174280393522136351}
   m_Layer: 0
-  m_Name: Rechthoek_knop_3
+  m_Name: Rode Knop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5008,6 +5059,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb2e48b9097dc64449d050305300d9fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RoodMat: {fileID: 2100000, guid: be09c0aa55204274fa6ffcd1ab2c911c, type: 2}
+  RoodEmission: {fileID: 2100000, guid: b8d26e6072f5fe243b3a96dd5978d071, type: 2}
+  renderer: {fileID: 5087951369129652573}
 --- !u!33 &8184165949725996541
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5028,7 +5082,7 @@ Transform:
   m_LocalScale: {x: 0.21061037, y: 0.012758677, z: 0.18335035}
   m_Children: []
   m_Father: {fileID: 6795603036490091452}
-  m_RootOrder: 18
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &8346953271148527188
 MeshRenderer:
