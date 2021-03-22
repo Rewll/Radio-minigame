@@ -9,7 +9,10 @@ public class LoginGameManager : MonoBehaviour
 {
     public TMPro.TMP_InputField codeLogin;
     public string Code;
-    public string RightCode;
+    public string RightCode1;
+    public string RightCode2;
+    public string RightCode3;
+    public string RightCode4;
 
     private void Start()
     {
@@ -20,13 +23,21 @@ public class LoginGameManager : MonoBehaviour
     private void Update()
     {
         Code = codeLogin.text;
-        if (Code == RightCode)
+        if (Code == RightCode1)
         {
             SceneManager.LoadScene(1);
         }
-        else
+        else if (Code == RightCode2)
         {
-            Debug.Log("bruh");
+            SceneManager.LoadScene(2);
+        }
+        else if (Code == RightCode3)
+        {
+            SceneManager.LoadScene(3);
+        }
+        else if (Code == RightCode4)
+        {
+            SceneManager.LoadScene(4);
         }
     }
 }
