@@ -9,10 +9,10 @@ public class LoginGameManager : MonoBehaviour
 {
     public TMPro.TMP_InputField codeLogin;
     public string Code;
-    public string RightCode1;
-    public string RightCode2;
-    public string RightCode3;
-    public string RightCode4;
+    public string rondLoopCode;
+    public string geluidsRadioCode;
+    public string temperatuurCode;
+    public string whackAMoleCode;
 
     private void Start()
     {
@@ -23,21 +23,21 @@ public class LoginGameManager : MonoBehaviour
     private void Update()
     {
         Code = codeLogin.text;
-        if (Code == RightCode1)
+        if (Code == rondLoopCode)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene("RondloopRadio");
         }
-        else if (Code == RightCode2)
+        else if (Code == geluidsRadioCode)
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene("Radio");
         }
-        else if (Code == RightCode3)
+        else if (Code == temperatuurCode)
         {
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene("TemperatuurRadio");
         }
-        else if (Code == RightCode4)
+        else if (Code == whackAMoleCode)
         {
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene("MollenRadio");
         }
     }
 }

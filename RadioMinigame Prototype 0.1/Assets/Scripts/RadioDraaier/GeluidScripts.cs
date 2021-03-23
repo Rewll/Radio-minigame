@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GeluidScripts : MonoBehaviour
 {
@@ -17,7 +18,6 @@ public class GeluidScripts : MonoBehaviour
 
     private void Start()
     {
-
         workingRotation = (int)Random.Range(10, 310);
     }
 
@@ -43,5 +43,10 @@ public class GeluidScripts : MonoBehaviour
         rotatieDelta = workingRotation - Yrotation;
         calculatedVolume = Mathf.Abs(10 / rotatieDelta);
         constantNoise.volume = calculatedVolume;
+    }
+
+    public void terug()
+    {
+        SceneManager.LoadScene("Login");
     }
 }
