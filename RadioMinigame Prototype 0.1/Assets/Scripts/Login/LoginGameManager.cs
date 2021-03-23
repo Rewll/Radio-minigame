@@ -11,33 +11,42 @@ public class LoginGameManager : MonoBehaviour
     public string Code;
     public string rondLoopCode;
     public string geluidsRadioCode;
-    public string temperatuurCode;
-    public string whackAMoleCode;
+    public AudioSource speaker;
+    public AudioClip goodCode;
+    public AudioClip badcode;
+    int radioIndex = 1;
+    int rondloopIndex = 2;
 
     private void Start()
     {
-        codeLogin = gameObject.GetComponent<TMPro.TMP_InputField>();
-        codeLogin.characterValidation = TMPro.TMP_InputField.CharacterValidation.Integer;
-        codeLogin.characterLimit = 4;
+        Time.timeScale = 1;
     }
+
     private void Update()
     {
         Code = codeLogin.text;
+    }
+
+    IEnumerator loadScene(AudioClip sound, int index)
+    {
+        speaker.PlayOneShot(sound);
+        yield return new WaitForSeconds(.7f);
+        SceneManager.LoadScene(index);
+    }
+
+    public void checkCode()
+    {
         if (Code == rondLoopCode)
         {
-            SceneManager.LoadScene("RondloopRadio");
+            StartCoroutine(loadScene(goodCode, rondloopIndex));
         }
         else if (Code == geluidsRadioCode)
         {
-            SceneManager.LoadScene("Radio");
+            StartCoroutine(loadScene(goodCode, radioIndex));
         }
-        else if (Code == temperatuurCode)
+        else
         {
-            SceneManager.LoadScene("TemperatuurRadio");
-        }
-        else if (Code == whackAMoleCode)
-        {
-            SceneManager.LoadScene("MollenRadio");
+            speaker.PlayOneShot(badcode);
         }
     }
 }

@@ -10,6 +10,11 @@ public class Rondkijker : MonoBehaviour
     public float MouseSens;
     Ray ray;
     RaycastHit objectHit;
+
+    public AudioSource soundSource;
+    public AudioClip good;
+    public AudioClip bad;
+
     public float rayLength = 10;
     public int objectToFindIndex;
     public List<GameObject> objectsToFind = new List<GameObject>();
@@ -23,6 +28,7 @@ public class Rondkijker : MonoBehaviour
     public Material Neutraal;
     public Material roodLicht;
     public Material groenLicht;
+
 
 
     void Start()
@@ -47,16 +53,16 @@ public class Rondkijker : MonoBehaviour
 
     void rodeKnipper()
     {
-        StartCoroutine(knipperDePipper(rodeLamp, Neutraal, roodLicht));
+        StartCoroutine(knipperDePipper(rodeLamp, Neutraal, roodLicht, bad));
     }
     void groeneKnipper()
     {
-        StartCoroutine(knipperDePipper(groeneLamp, Neutraal, groenLicht));
+        StartCoroutine(knipperDePipper(groeneLamp, Neutraal, groenLicht, good));
     }
 
-
-    IEnumerator knipperDePipper(GameObject lampje, Material normaal, Material licht)
+    IEnumerator knipperDePipper(GameObject lampje, Material normaal, Material licht, AudioClip sound)
     {
+        soundSource.PlayOneShot(sound);
         var renderer = lampje.GetComponent<Renderer>();
         renderer.material = licht;
         yield return new WaitForSeconds(.3f);

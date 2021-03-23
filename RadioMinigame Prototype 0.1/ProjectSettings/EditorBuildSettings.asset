@@ -12,12 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Radio.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/MollenRadio.unity
-    guid: b22cf0d44c1d5954e925de21fa150fab
-  - enabled: 1
     path: Assets/Scenes/RondloopRadio.unity
     guid: c4a11d2ddf8489c459027b715068e281
-  - enabled: 1
-    path: Assets/Scenes/TemperatuurRadio.unity
-    guid: a42e10dee74575e4f9b4e62269c92892
   m_configObjects: {}

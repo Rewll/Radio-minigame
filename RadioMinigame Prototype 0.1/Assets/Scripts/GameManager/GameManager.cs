@@ -14,6 +14,11 @@ public class GameManager : SingleTon<GameManager>
     public bool bruinEmission;
     public bool oranjeEmission;
 
+    [Header("Audio")]
+    public AudioSource bronVanGeluid;
+    public AudioClip click;
+    public AudioClip wrong;
+
 
     Ray ray;
     RaycastHit clickHit;
@@ -41,11 +46,13 @@ public class GameManager : SingleTon<GameManager>
     {
         if (knop == knopVolgorde[indexP])
         {
+            bronVanGeluid.PlayOneShot(click);
             index++;
             knopScore += 1;
         }
         else
         {
+            bronVanGeluid.PlayOneShot(wrong);
             StartCoroutine(reset(.5f));
             StartCoroutine(blink());
             Debug.Log("FOUT");
