@@ -21,6 +21,7 @@ public class Rondkijker : MonoBehaviour
 
     public GameObject display;
     public GameObject winScreen;
+    public GameObject helpscreen;
 
     public GameObject rodeLamp;
     public GameObject groeneLamp;
@@ -29,11 +30,9 @@ public class Rondkijker : MonoBehaviour
     public Material roodLicht;
     public Material groenLicht;
 
-
-
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+        Time.timeScale = 0;
         X = 90;
         display.GetComponent<Renderer>().material = objectsToFind[objectToFindIndex].GetComponent<Renderer>().material;
     }
@@ -114,5 +113,12 @@ public class Rondkijker : MonoBehaviour
     public void terug()
     {
         SceneManager.LoadScene(0);
+    }
+
+    public void start()
+    {
+        helpscreen.SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked;
+        Time.timeScale = 1;
     }
 }

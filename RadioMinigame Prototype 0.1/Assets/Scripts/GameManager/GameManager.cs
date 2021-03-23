@@ -8,6 +8,7 @@ public class GameManager : SingleTon<GameManager>
     public int index;
     public int knopScore;
     public GameObject radioDraaier;
+    public GameObject helpscreen;
 
     public bool roodEmission;
     public bool geelEmission;
@@ -28,6 +29,7 @@ public class GameManager : SingleTon<GameManager>
     {
         Instance = this;
         radioDraaier.SetActive(false);
+        Time.timeScale = 0f;
     }
 
     private void Update()
@@ -119,5 +121,11 @@ public class GameManager : SingleTon<GameManager>
                 checkVolgorde(click.knopKleur, index);
             }
         }
+    }
+
+    public void start()
+    {
+        helpscreen.SetActive(false);
+        Time.timeScale = 1;
     }
 }
